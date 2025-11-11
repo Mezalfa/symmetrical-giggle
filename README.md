@@ -31,3 +31,5 @@ Clicking on the "Pretty-print" option will provide the same output like so:
     "Neck"
   ]
 }
+
+The wiki pages contain the deliverables for this assignment.
