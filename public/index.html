@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta  charset="UTF-8">
+<meta  name="viewport" content="width=device-width,  initial-scale=1.0">
+<title>Google Cloud Vision API Demo</title>
+</head>
+<body>
+
+<h1>Upload  an Image for Label Detection</h1>
+<form  action="/upload" method="POST"  enctype="multipart/form-data">
+<input  type="file" name="image" accept="image/*"  required>
+<button  type="submit">Upload Image</button>
+</form>
+<div  id="results"></div>
+<script>
+ document.querySelector('form').addEventListener('submit', async (event)  => {
+     event.preventDefault();
+     const  formData = new FormData(event.target);
+     const  response = await fetch('/upload', {
+               method: 'POST',
+               body:  formData
+             });
+
+
+     const data  = await response.json();
+     const  resultsDiv = document.getElementById('results');
+     if (data.labels) {
+           resultsDiv.innerHTML = `<h2>Detected  Labels:</h2><ul>${data.labels.map(label =>  `<li>${label}</li>`).join('')}</ul>`;
+     } else {
+            resultsDiv.innerHTML = `<p>Error: ${data}</p>`;
+     }
+  });
+/script>
+</body>
+</html>
