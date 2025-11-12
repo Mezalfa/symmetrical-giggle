@@ -14,10 +14,6 @@ const upload = multer({
 
 const client = new ImageAnnotatorClient();
 
-// STEP 3: Serve static files from 'public' directory
-app.use(express.static('public'));
-
-// STEP 4: Serve the basic HTML form for image upload
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
