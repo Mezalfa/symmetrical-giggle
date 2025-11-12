@@ -1,4 +1,4 @@
-runtime: nodejs20
-env: standard
+runtime: nodejs20 //specifies runtime to be used
+env: standard // specifies the GAE environment type
 
 
