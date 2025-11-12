@@ -1,11 +1,11 @@
-<div align="right">
 
-- Mesmer Alfs
+
+- Mesmer Alfa
 - Haoran Li
 - Sravan Kumar
 - Navin Ramani
 
-</div>
+
 
 # Software as a Service: Google Cloud Vision API
 
