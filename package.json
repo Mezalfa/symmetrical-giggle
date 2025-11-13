@@ -1,9 +1,9 @@
 {
-  "name": "nov13", //name of project
-  "version": "1.0.0", // current version of project
-  "main": "index.js", //Specifies the initial entry point for GAE
+  "name": "nov13", 
+  "version": "1.0.0", 
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js",  // The command run by GAE to launch the server
+    "start": "node index.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,8 +11,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@google-cloud/vision": "^5.3.4", //Required library to interact with the Google Cloud Vision
-    "multer": "^2.0.2", // To handle the multipart/form data file
-    "express": "^4.19.2" // Web framework used to build server
+    "@google-cloud/vision": "^5.3.4", 
+    "multer": "^2.0.2",
+    "express": "^4.19.2"
   }
 }
